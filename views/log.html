@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoCorp&nbsp;&#9410;</title>
+    <link rel="icon" type="image/x-icon" href="../static/harley.ico">
+
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@500&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&display=swap'); */
+        body
+        {
+            position: relative;
+            top: 120px;
+        }
+        .body
+        {
+            display: flex;
+            justify-content: center;
+        }
+        body img
+        {
+            position: absolute;
+            top: -120px;
+            left: 20px;
+            width: 120px;
+            height: 140px;
+        }
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+        }
+        form .sign
+        {
+            /* font-family: 'Carrois Gothic SC', sans-serif;
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Oswald', sans-serif; */
+            font-size: 40px;
+            font-weight: 600;
+            position: relative;
+            left: -250px;
+            width: 410px;
+        }
+        /* form .img
+        {
+            margin-top: 0;
+        } */
+        form input
+        {
+            padding: 10px;
+            margin-top: 30px;
+            margin-bottom: 2px;
+            width: 400px;
+        }
+        form .signin
+        {
+            margin-top: 20px;
+            width: 426px;
+            height: 40px;
+            border: none;
+            background-color: rgb(55, 124, 253);
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+            margin-left: 0px;
+        }
+        form button:hover
+        {
+            cursor: pointer;
+        }
+        .btn
+        {
+            margin-top: 20px;
+            width: 426px;
+            height: 40px;
+            border: none;
+            background-color: rgb(55, 124, 253);
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+            margin-left: 0px;
+        }
+        .sign
+        {
+            margin-left: 500px;
+        }
+        .sign .btn
+        {
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/home"><img src="../static/harley.ico"></a>
+    <div class="body">
+        <form method="post">
+            <label class="sign" id="sign">Log In</label>
+            <input type="username" name="username" placeholder="username" required>
+            <input type="password" name="password" placeholder="password" required>
+            <button class="btn" name="btn">Log In</button>
+        </form>
+    </div>
+    <div class="sign">
+        <h3>Don't Have an Account</h3>
+        <a href="/signin">Sign In</a>
+    </div>
+</body>
+</html>

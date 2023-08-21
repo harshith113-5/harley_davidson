@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoCorp&nbsp;&#x24C2;</title>
+  <link rel="icon" type="image/x-icon" href="../static/harley.ico">
+  <style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@500&display=swap'); */
+    /* @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&display=swap'); */
+    body
+    {
+    position: relative;
+    top: 120px;
+    }
+    .main
+    {
+    display: flex;
+    justify-content: center;
+    }
+    body img
+    {
+    position: absolute;
+    top: -120px;
+    left: 20px;
+    width: 120px;
+    height: 140px;
+    }
+    form
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    }
+    form .sign
+    {
+    /* font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Oswald', sans-serif; */
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    left: -156px;
+    }
+    form .upload
+    {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    left: -130px;
+    margin-top: 20px;
+    }
+    form .img
+    {
+    margin-top: 0;
+    }
+    form input
+    {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    width: 400px;
+    }
+    form .signin
+    {
+    margin-top: 20px;
+    width: 426px;
+    height: 40px;
+    border: none;
+    background-color: rgb(55, 124, 253);
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    }
+    form button:hover
+    {
+    cursor: pointer;
+    }
+    form p a
+    {
+    color: black;
+    }
+    /* .btn
+    {
+    margin-top: -10px;
+    width: 426px;
+    height: 40px;
+    border: none;
+    background-color: rgb(55, 124, 253);
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    margin-left: 500px;
+    } */
+  </style>
+</head>
+<body>
+<a href="/home"><img src="../static/harley.ico"></a>
+<div class="main">
+  <form method="post">
+    <label class="sign" id="sign" for="form">Sign In</label>
+    <input id="us" type="username" name="username" placeholder="username" required="">
+    <input id="pwd" type="password" name="password" placeholder="password" required="">
+    <input id="mail" type="mail" name="mail" placeholder="mail" required="">
+    <!--
+    <label for="image" class="upload" id="upload">Upload ur Profile Pic</label>
+    <input type="file" id="image" name="image" value="" class="img">
+    -->
+    <button class="signin" name="btn">Sign In</button>
+    <p><a id="tro" href="">Trouble Signing In?</a></p>
+    <!-- <p id="or">Or</p>-->
+    <!-- <h3 id="log">Have an Account u can Login</h3>-->
+  </form>
+</div>
+</body>
+<!-- <button class="btn" onclick="window.location.href='../views/log.html'" id="submit">Log In</button>-->
+<!-- <script src="../views/login.js"></script>-->
+
+</html>

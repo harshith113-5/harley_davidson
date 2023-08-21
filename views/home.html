@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MotoCorp&nbsp;&#9410;</title>
+    <link rel="icon" type="image/x-icon" href="../static/harley.ico">
+    <link rel="stylesheet" href="../views/homestyle.css">
+
+</head>
+<body>
+    <div class="nav">
+      <a href="/home"><img src="../static/harley.ico"></a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#color">Buy-Now</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#detail">Detailed Specs</a></li>
+        <li class="con"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="profile">
+        <a href="/log"><img id="img1" src="../static/profile.ico"></a>
+        <figcaption>Sign in/Log In</figcaption>
+      </div>
+    </div>
+
+    <div class="main">
+        <video muted autoplay loop id="myVideo">
+            <source src="../static/VID_20230819201017.mp4" type="video/mp4">
+        </video>
+        <div class="content d-flex">
+            <div class="des">
+                <h3>DESCRIPTION</h3>
+                <p class="pdes">The H-D X440 is the single cylinder Harley-Davidson, reimagined. With unmistakable power and presence along with a nimble, 
+                    comfortable ride, the H-D X440 is designed to bring a whole new generation into the Harley-Davidson family.</p>
+            </div>
+            <div class="side">
+                <h3>OVERVIEW</h3>
+                <p class="p">
+                    <ul>
+                        <li>All-new 440cc oil cooled engine</li>
+                        <li>Powerful signature Harley-Davidson exhaust note</li>
+                        <li>Nimble, agile handling</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buy">
+      <div class="txt">
+          <h1>The Harley-Davidson™ X440.<br>
+          Roadster Reimagined.</h1>
+      </div>
+    </div>
+
+    <div class="color" id="color">
+      <img id="img" src="../static/2023-h-d-x-440-f63-motorcycle-03.webp">
+      <div class="bar">
+        <div class="con">
+          <h3>COLOUR OPTIONS</h3>
+          <div class="colors">
+              <button id="b1" onclick="b1()"></button>
+              <button id="b2" onclick="b2()"></button>
+              <button id="b3" onclick="b3()"></button>
+              <button id="b4" onclick="b4()"></button>
+          </div>
+          <div id="name"></div>
+          <div id="add"></div>
+        </div>
+        <div class="vl"></div>
+        <div class="price">
+          <h3>STARTS AT</h3>
+          <p>INR.2,39,000</p>
+        </div>
+        <div class="buynow">
+          <button onclick="window.location.href='https://www.harley-davidsonx440.com/'">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+      function b1()
+      {
+          const image=document.getElementById('img')
+          image.src="../static/2023-h-d-x-440-f63-motorcycle-03.webp"
+          document.getElementById("name").innerHTML="Denim - Mustard Denim"
+          document.getElementById("add").innerHTML=""
+      }
+      function b2()
+      {
+          const image=document.getElementById('img')
+          image.src="../static/2023-h-d-x-440-f85-motorcycle-03.webp"
+          document.getElementById("name").innerHTML="Vivid - Dark Silver"
+          document.getElementById("add").innerHTML="Adds INR.20,000 to MRP"
+      }
+      function b3()
+      {
+          const image=document.getElementById('img')
+          image.src="../static/2023-h-d-x-440-f53-motorcycle-03.webp"
+          document.getElementById("name").innerHTML="Vivid - Thick Red"
+          document.getElementById("add").innerHTML="Adds INR.20,000 to MRP"
+      }
+      function b4()
+      {
+          const image=document.getElementById('img')
+          image.src="../static/2023-h-d-x-440-010-motorcycle-03.webp"
+          document.getElementById("name").innerHTML="S - Matte Black"
+          document.getElementById("add").innerHTML="Adds INR.40,000 to MRP"
+      }
+    </script>
+
+    <!-- <div class="parallax-1">
+        <h1>To answer the call of the road.</h1>
+    </div> -->
+
+    <div class="carousel">
+      <div class="text">
+        KEY FEATURES
+      </div>
+      <div class="carousel-in" id="Features">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/x440-mcar-1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>STYLISH DETAILING</h5>
+              <p>Class-leading lighting, technology and finishing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/x440-mcar-2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CONFIDENT HANDLING</h5>
+              <p>Optimized geometry ensures commanding view of the road.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/x440-mcar-4.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CLASSIC TURTLE TANK</h5>
+              <p>Distinctive Harley-Davidson from every angle.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
+    </div>
+
+    <div class="key">
+      <div class="txt">
+        <h1>Key Features</h1>
+        <div class="num1">
+          <h2>01</h2><div class="txt1"></div>
+        </div>
+        <h3>THE HEART OF THE X440</h3>
+        <p>The all-new 440cc oil cooled engine makes a classic retro design statement and exudes power as well as ample low and 
+          mid range torque.The 6-speed transmission offers gearing that is optimized for both highway cruising and for city commuting.</p>
+        <div class="num2">
+          <h2>02</h2><div class="txt2"></div>
+        </div>
+        <h3>BUILT FOR COMFORT AND CONFIDENCE</h3>
+        <p>The frame boasts Harley-Davidson's signature wide and flat handlebars for a commanding rider position. The comfortable saddle style rider 
+          seat is perfect for long rides, while optimised chassis geometry ensures a stable ride at high speeds.
+          The pillion seat and legroom combine with optimized pillion grab-rails ensure best-in-class passenger comfort.</p>
+      </div>
+      <div class="imgs">
+        <img class="img1" src="../static/x440-mtb-582.webp">
+        <img class="img2" src="../static/x440-mtb-388.webp">
+      </div>
+    </div>
+
+    <div id="detail">
+      <h3>Detailed Specs</h3>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Dimensions
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <table style="width:100%">
+              <tr>
+                <td>LENGTH</td>
+                <td>2168 mm</td>
+              </tr>
+              <tr>
+                <td>SEAT HEIGHT, UNLADEN</td>
+                <td>805mm</td>
+              </tr>
+              <tr>
+                <td>GROUND CLEARANCE</td>
+                <td>170mm</td>
+              </tr>
+              <tr>
+                <td>RAKE</td>
+                <td>25.5</td>
+              </tr>
+              <tr>
+                <td>TRAIL</td>
+                <td>102.7mm</td>
+              </tr>
+              <tr>
+                <td>WEIGHT, AS SHIPPED</td>
+                <td>181 kg</td>
+              </tr>
+              <tr>
+                <td>WEIGHT, IN RUNNING ORDER</td>
+                <td>190.5 kg</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ENGINE
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <table style="width:100%">
+              <tr>
+                <td>ENGINE 2</td>
+                <td>440cc Single Cylinder Air-Oil Cooled Engine</td>
+              </tr>
+              <tr>
+                <td>BORE</td>
+                <td>79.6 mm</td>
+              </tr>
+              <tr>
+                <td>STROKE</td>
+                <td>88.4 mm</td>
+              </tr>
+              <tr>
+                <td>DISPLACEMENT</td>
+                <td>440cc</td>
+              </tr>
+              <tr>
+                <td>COMPRESSION RATIO</td>
+                <td>9.5:1</td>
+              </tr>
+              <tr>
+                <td>FUEL SYSTEM</td>
+                <td>Fi</td>
+              </tr>
+              <tr>
+                <td>EXHAUST</td>
+                <td>Single Side Exhaust</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            PERFORMANCE
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <table style="width:100%">
+              <tr>
+                <td>ENGINE TORQUE TESTING METHOD</td>
+                <td>As per AIS 137</td>
+              </tr>
+              <tr>
+                <td>ENGINE TORQUE 3</td>
+                <td>38 Nm</td>
+              </tr>
+              <tr>
+                <td>ENGINE TORQUE (RPM)</td>
+                <td>4000</td>
+              </tr>
+              <tr>
+                <td>HORSEPOWER</td>
+                <td>27 bhp@ 6000rpm</td>
+              </tr>
+              <tr>
+                <td>LEAN ANGLE, RIGHT (DEG.)</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>LEAN ANGLE, LEFT (DEG.)</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>FUEL ECONOMY</td>
+                <td>35 km/l</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            RIDER SAFTEY ENHANCEMENT
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <table style="width:100%">
+              <tr>
+                <td>ANTI-LOCK BRAKE SYSTEM (ABS)</td>
+                <td>Dual Channel ABS included</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+
+      <div class="foot">
+        <h1>HARLEY <span>&#8208;</span> DAVIDSON</h1>
+        <!-- <div class="hr"></div> -->
+        <hr>
+        <h2 id="contact">Contact</h2>
+        <div class="contact">
+          <form method="post">
+            <input type="text" name="fname" placeholder="First Name" id="fname"><br>
+            <input type="text" name="lname" placeholder="Last Name" id="lname"><br>
+            <input type="email" name="mail" placeholder="Email" id="mail"><br>
+            <textarea name="adress" placeholder="Adress" id="adress"></textarea><br>
+            <textarea name="remarks" placeholder="Remarks" id="remarks"></textarea><br>
+            <input type="button" id="submitForm" onclick="submit()" value="Submit">
+          </form>
+        </div>
+        <script>
+          // let x=document.forms['form']['firstname'].value;
+          // let y=document.forms['form']['lastname'].value;
+          // let z=document.forms['form']['mail'].value;
+          // let a=document.forms['form']['adress'].value;
+          // let b=document.forms['form']['remarks'].value;
+
+          // let x=document.getElementById('fname');
+          // let y=document.getElementById('lname');
+          // let z=document.getElementById('mail');
+          // let a=document.getElementById('adress');
+          // let b=document.getElementById('remarks');
+
+          // if(x.value ===" " || y.value ===" "||z.value===" "||a.value ===" "||b.value ===" ")
+          // {
+          //   $("#submitForm").click(function() {
+          //     alert("Fill all Fields");
+          //   });
+
+          // }
+          // else
+          // {
+          //   setTimeout(()=>{
+          //     x.value='';
+          //     y.value='';
+          //     z.value='';
+          //     a.value='';
+          //     b.value='';
+          //   },2000);
+
+          //   $("#submitForm").click(function() {
+          //     alert("Submitted successfully");
+          //   });
+          // }
+          // 
+        </script>
+        <hr>
+        <div class="last">
+          <ul>
+            <li><a href="https://www.harley-davidson.com/in/en/footer/sitemap.html">Sitemap</a></li>|
+            <li><a href="https://www.harley-davidson.com/in/en/motorcycles/x-440.html">Disclaimers</a></li>|
+            <li><a href="https://www.harley-davidson.com/in/en/footer/utility/terms-of-use.html">Terms of Use</a></li>|
+            <li><a href="https://www.harley-davidson.com/in/en/footer/utility/privacy-policy.html">Privacy Policy</a></li>|
+            <li><a href="https://www.harley-davidson.com/in/en/footer/utility/cookie-policy.html">Cookie Policy</a></li>|
+            <li><a href="https://www.harley-davidson.com/in/en/motorcycles/x-440.html">Manage Cookie Preferences</a></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="copyr">
+          <div class="copy">
+            ©2023 H-D or its affiliates. HARLEY-DAVIDSON, HARLEY, H-D, and the Bar and Shield Logo are among the trademarks of H-D U.S.A., LLC. 
+            Third-party trademarks are the property of their respective owners.
+          </div>
+          <div class="handles">
+            <a href="https://www.instagram.com/harleydavidson_india/"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a>
+            <a href="https://www.facebook.com/HarleyDavidsonindia/"><i class="fa fa-facebook-f" style="font-size:36px;color:white"></i></a>
+            <a href="https://twitter.com/HarleyIndia"><i class="fa fa-twitter" style="font-size:36px;color:white"></i></a>
+            <a href="https://www.youtube.com/user/harleydavidsonindia"><i class="fa fa-youtube-play" style="font-size:36px;color:white"></i></a>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

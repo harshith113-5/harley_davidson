@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carrois+Gothic+SC&family=Josefin+Sans&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&display=swap');
+.start
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.start h1
+{
+    font-weight: bold;
+    font-size: 48px;
+}
+.start button
+{
+    background: linear-gradient(90deg,rgba(248, 19, 19, 0.694),rgba(95, 239, 95, 0.648));
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.start button:hover
+{
+    cursor: pointer;
+}
+
+/* iframe
+{
+    display: none;
+} */
