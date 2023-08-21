@@ -38,16 +38,16 @@ app.set('view engine','pug')
 app.set('/views',__dirname,'views')
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../Emotors','views','main.html'));
+    res.sendFile(path.join(__dirname,'views','main.html'));
 })
 app.get('/home',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../Emotors','views','home.html'));
+    res.sendFile(path.join(__dirname,'views','home.html'));
 })
 app.get('/log',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../Emotors','views','log.html'));
+    res.sendFile(path.join(__dirname,'views','log.html'));
 })
 app.get('/signin',(req,res)=>{
-    res.sendFile(path.join(__dirname,'../Emotors','views','signin.html'));
+    res.sendFile(path.join(__dirname,'views','signin.html'));
 })
 
 app.post("/home", (req, res) => {
