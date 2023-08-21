@@ -43,6 +43,9 @@ app.get('/',(req,res)=>{
 app.get('/home',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','home.html'));
 })
+app.get('/homelog',(req,res)=>{
+    res.sendFile(path.join(__dirname,'views','homelog.html'));
+})
 app.get('/log',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','log.html'));
 })
@@ -63,7 +66,7 @@ app.post("/log",async (req,res)=>{
     const check=await sd.findOne({username:req.body.username})
     if(check.password===req.body.password)
     {
-        res.redirect('/home');
+        res.redirect('/homelog');
     }
     else
     {
