@@ -62,6 +62,15 @@ app.post("/home", (req, res) => {
     });
 });
 
+app.post("/homelog", (req, res) => {
+    var out = new cd(req.body);
+    out.save().then(() => {
+        res.redirect('/homelog')
+    }).catch(() => {
+        res.status(400).send("Failed");
+    });
+});
+
 app.post("/log",async (req,res)=>{
     const check=await sd.findOne({username:req.body.username})
     if(check.password===req.body.password)
