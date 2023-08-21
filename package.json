@@ -6,7 +6,6 @@
     "node": "^20.5.0",
     "nodemon": "^3.0.1",
     "pug": "^3.0.2"
-    "body-parser": "^1.20.2",
   },
   "name": "emotors",
   "version": "1.0.0",
