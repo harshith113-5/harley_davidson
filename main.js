@@ -34,7 +34,6 @@ app.use('/static', express.static('static'));
 app.use('/views', express.static('views'));
 app.use(express.json());
 
-app.set('view engine','pug')
 app.set('/views',__dirname,'views')
 
 app.get('/',(req,res)=>{
